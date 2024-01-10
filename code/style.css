@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /*primary-colors*/
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /*neutral-colors*/
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+img {
+    display: block;
+}
+
+
+#card-text-product, #card-text-description, #card-text-price #original {
+    font-family: 'Montserrat', serif;
+    color: var(--dark-grayish-blue);
+}
+
+#card-text-title, #card-text-price #discount {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+}
+
+#card {
+    width: 342px;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#card-img {
+    width: 100%;
+    height: 239px;
+}
+
+#card-img img {
+    width: 100%;
+}
+
+#card-text {
+    padding: 20px 25px;
+}
+
+#card-text-product {
+    margin-bottom: 10px;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+#card-text-title {
+    margin-bottom: 16px;
+    line-height: 30px;
+}
+
+#card-text-description {
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+
+#card-text-price {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 13px;
+}
+
+#card-text-price #discount {
+    color: var(--dark-cyan);
+}
+
+#card-text-price #original {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
+
+#card-text-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-cyan);
+    font-weight: bold;
+}
+
+@media (min-width:1200px) {
+    #card {
+        display: flex;
+        width: 541px;
+    }
+
+    #card-img {
+        width: 271px;
+    }
+
+    #card-text {
+        width: 268px;
+        padding: 25px 22px;
+    }
+
+    #card-text-product {
+        margin-bottom: 14px;
+    }
+
+    #card-text-title, #card-text-price {
+        margin-bottom: 20px;
+    }
+
+    #card-text-description{
+        margin-bottom: 18px;
+        line-height: 21px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
