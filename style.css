@@ -14,6 +14,7 @@ html {
 :root {
     /*primary-colors*/
     --dark-cyan: hsl(158, 36%, 37%);
+    --darkest-cyan: hsl(158, 36%, 9%);
     --cream: hsl(30, 38%, 92%);
 
     /*neutral-colors*/
@@ -77,6 +78,7 @@ img {
 }
 
 #card-text-title {
+    color: var(--very-dark-blue);
     margin-bottom: 14px;
     line-height: 30px;
 }
@@ -115,6 +117,13 @@ img {
     border-radius: 5px;
     background-color: var(--dark-cyan);
     font-weight: bold;
+}
+
+
+#card-text-cart:hover{
+    background-color: var(--darkest-cyan);
+    cursor: pointer;
+
 }
 
 @media (min-width:1400px) {
