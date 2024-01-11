@@ -67,22 +67,22 @@ img {
 }
 
 #card-text {
-    padding: 20px 25px;
+    padding: 18px 25px;
 }
 
 #card-text-product {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
 }
 
 #card-text-title {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     line-height: 30px;
 }
 
 #card-text-description {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     font-size: 1.4rem;
     line-height: 20px;
 }
@@ -117,7 +117,7 @@ img {
     font-weight: bold;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1400px) {
     #card {
         display: flex;
         width: 541px;
